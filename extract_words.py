@@ -12,9 +12,8 @@ def get_words():
         list_words.append(word)
     return list_words
 
-def random_word(lenght_word):
+def random_word():
     r_word = random.choice(get_words())
-    while len(r_word) != lenght_word:
-        r_word = random.choice(get_words())
     return r_word
+    
 
